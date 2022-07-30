@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Birthday from "./components/functional/Birthday";
-import "./index.css";
+import TourMain from "./components/functional/Tour";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Birthday />
+    <TourMain />
   </React.StrictMode>
 );
 

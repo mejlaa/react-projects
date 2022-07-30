@@ -1,4 +1,4 @@
-const List = ({ people }) => {
+const ListBirthday = ({ people }) => {
   return (
     <>
       {people.map((person) => {
@@ -17,4 +17,4 @@ const List = ({ people }) => {
   );
 };
 
-export default List;
+export default ListBirthday;
