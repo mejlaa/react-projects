@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import TourMain from "./components/functional/Tour";
+import MainReview from "./components/functional/Reviews";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <TourMain />
+    <MainReview />
   </React.StrictMode>
 );
 
