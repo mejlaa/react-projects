@@ -1,0 +1,72 @@
+.frame {
+  width: 380px;
+  height: 500px;
+  background-color: rgb(161, 151, 15);
+  border-radius: 20px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.frameDiv {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 470px;
+  margin: auto;
+}
+
+.temperature {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: rgba(25, 90, 94, 0.856);
+  font-size: 90px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+.tempCold {
+  background-color: rgb(27, 27, 185);
+}
+
+.tempHot {
+  background-color: rgb(200, 4, 4);
+}
+
+.btnBox {
+  /* margin: auto; */
+  display: flex;
+  justify-content: space-between;
+  /* padding: 30px; */
+}
+
+.btn {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rgba(25, 90, 94, 0.856);
+  margin: auto;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.resetBtn {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  background-color: rgba(25, 90, 94, 0.856);
+  border: 1px solid white;
+  border-radius: 7px;
+  margin-top: 20px;
+}
