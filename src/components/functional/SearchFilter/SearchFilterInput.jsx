@@ -1,7 +1,8 @@
 import React from "react";
 
-const SearchInput = (props) => {
+const SearchFilterInput = (props) => {
   const { type, value, setValue } = props;
+  // console.log(props);
 
   return (
     <div>
@@ -14,4 +15,4 @@ const SearchInput = (props) => {
   );
 };
 
-export default SearchInput;
+export default SearchFilterInput;
