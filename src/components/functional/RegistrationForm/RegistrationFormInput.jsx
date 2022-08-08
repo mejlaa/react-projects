@@ -30,33 +30,39 @@ const RegistrationFormInput = () => {
   return (
     <div className="box">
       <form className="inputs" onSubmit={submitHandler}>
-        {submitted ? (
+        {submitted && valid ? (
           <p className="success-message">Success! Thank you for registering</p>
         ) : null}
         <input
           className="input"
-          type="text"
-          placeholder="First name"
+          placeholder="First Name"
+          name="firstName"
           value={values.firstName}
           onChange={inputFirstNameHandler}
         />
-        {submitted && valid ? <span>Please enter a first name</span> : null}
+        {submitted && !values.firstName ? (
+          <span>Please enter a first name</span>
+        ) : null}
         <input
           className="input"
-          type="text"
           placeholder="Last name"
+          name="lastName"
           value={values.lastName}
           onChange={inputLastNameHandler}
         />
-        {submitted && valid ? <span>Please enter a first name</span> : null}
+        {submitted && !values.lastName ? (
+          <span>Please enter a last name</span>
+        ) : null}
         <input
           className="input"
-          type="email"
           placeholder="E-mail"
+          name="email"
           value={values.email}
           onChange={inputEmailHandler}
         />
-        {submitted && valid ? <span>Please enter a first name</span> : null}
+        {submitted && !values.email ? (
+          <span>Please enter a first name</span>
+        ) : null}
         <button className="btn">Registar</button>
       </form>
     </div>
