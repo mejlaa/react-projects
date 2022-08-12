@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import RegistrationForm from "./components/functional/RegistrationForm";
+import QuizApp from "./components/functional/QuizApp";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RegistrationForm />
+    <QuizApp />
   </React.StrictMode>
 );
 
