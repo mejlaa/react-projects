@@ -4,6 +4,15 @@ import "./quizApp.css";
 const QuizApp = () => {
   const question = [
     {
+      questionText: "Who is Aleksandar Vucic?",
+      ansQuestion: [
+        { ansText: "President of Serbia", isCorrect: true },
+        { ansText: "Idiot", isCorrect: false },
+        { ansText: "President of Bosnia", isCorrect: false },
+        { ansText: "President of Montenegro", isCorrect: false },
+      ],
+    },
+    {
       questionText: "?",
       ansQuestion: [
         { ansText: "Something", isCorrect: false },
@@ -39,6 +48,24 @@ const QuizApp = () => {
         { ansText: "alb alb", isCorrect: true },
       ],
     },
+    {
+      questionText: "Who is Ana Ivanovic?",
+      ansQuestion: [
+        { ansText: "Model", isCorrect: false },
+        { ansText: "Tennis player", isCorrect: true },
+        { ansText: "Novak's wife ", isCorrect: false },
+        { ansText: "Basketball player", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "Who is Aleksandar Vucic?",
+      ansQuestion: [
+        { ansText: "President of Serbia", isCorrect: true },
+        { ansText: "Idiot", isCorrect: false },
+        { ansText: "President of Bosnia", isCorrect: false },
+        { ansText: "President of Montenegro", isCorrect: false },
+      ],
+    },
   ];
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -61,7 +88,7 @@ const QuizApp = () => {
     <div className="app">
       {showScore ? (
         <div>
-          You scored {score} out of {question.length}
+          You scored {score} of {question.length}
         </div>
       ) : (
         <>
