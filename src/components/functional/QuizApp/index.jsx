@@ -4,39 +4,39 @@ import "./quizApp.css";
 const QuizApp = () => {
   const question = [
     {
-      questionText: "What is the capital of France?",
-      answerOptions: [
-        { answerText: "New York", isCorrect: false },
-        { answerText: "London", isCorrect: false },
-        { answerText: "Paris", isCorrect: true },
-        { answerText: "Dublin", isCorrect: false },
+      questionText: "?",
+      ansQuestion: [
+        { ansText: "Something", isCorrect: false },
+        { ansText: "Nothing", isCorrect: false },
+        { ansText: "Anything", isCorrect: false },
+        { ansText: "Everything", isCorrect: true },
       ],
     },
     {
       questionText: "Who is Ana Ivanovic?",
-      answerOptions: [
-        { answerText: "Model", isCorrect: false },
-        { answerText: "Tennis player", isCorrect: true },
-        { answerText: "Novak's wife ", isCorrect: false },
-        { answerText: "Basketball player", isCorrect: false },
+      ansQuestion: [
+        { ansText: "Model", isCorrect: false },
+        { ansText: "Tennis player", isCorrect: true },
+        { ansText: "Novak's wife ", isCorrect: false },
+        { ansText: "Basketball player", isCorrect: false },
       ],
     },
     {
-      questionText: "The iPhone was created by which company?",
-      answerOptions: [
-        { answerText: "Apple", isCorrect: true },
-        { answerText: "Intel", isCorrect: false },
-        { answerText: "Amazon", isCorrect: false },
-        { answerText: "Microsoft", isCorrect: false },
+      questionText: "Who is Aleksandar Vucic?",
+      ansQuestion: [
+        { ansText: "President of Serbia", isCorrect: true },
+        { ansText: "Idiot", isCorrect: false },
+        { ansText: "President of Bosnia", isCorrect: false },
+        { ansText: "President of Montenegro", isCorrect: false },
       ],
     },
     {
-      questionText: "How many Harry Potter books are there?",
-      answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true },
+      questionText: "Bla bla?",
+      ansQuestion: [
+        { ansText: "bla alb", isCorrect: false },
+        { ansText: "alb", isCorrect: false },
+        { ansText: "bla", isCorrect: false },
+        { ansText: "alb alb", isCorrect: true },
       ],
     },
   ];
@@ -75,9 +75,11 @@ const QuizApp = () => {
           </div>
 
           <div className="answer-section">
-            {question[currentQuestion].answerOptions.map((answerOption) => (
-              <button onClick={answerClickHandler}>
-                {answerOption.answerText}
+            {question[currentQuestion].ansQuestion.map((answerOption) => (
+              <button
+                onClick={() => answerClickHandler(answerOption.isCorrect)}
+              >
+                {answerOption.ansText}
               </button>
             ))}
           </div>
