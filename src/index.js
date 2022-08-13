@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import QuizApp from "./components/functional/QuizApp";
+import RegForm from "./components/functional/Practise/regForm";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <QuizApp />
+    <RegForm />
   </React.StrictMode>
 );
 
