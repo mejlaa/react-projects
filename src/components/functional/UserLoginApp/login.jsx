@@ -4,7 +4,7 @@ import "./loginApp.css";
 const Login = (props) => {
   const [values, setValues] = useState({ userName: "", password: "" });
   const [isActive, setIsActive] = useState(true);
-  //   const [valid, setValid] = useState(false);
+  const [valid, setValid] = useState(false);
 
   const inputUserNameHandler = (e) => {
     setValues({ ...values, userName: e.target.value });
@@ -19,7 +19,8 @@ const Login = (props) => {
     setIsActive(false);
   };
 
-  const logoutSubmitHandler = () => {
+  const logoutSubmitHandler = (e) => {
+    e.preventDefault();
     setIsActive(true);
   };
 
@@ -55,8 +56,8 @@ const Login = (props) => {
         </div>
       ) : (
         <div>
-          <p>{values.userName}</p>
-          <p>{values.password}</p>
+          <p>User name: {values.userName}</p>
+          <p>Password: {values.password}</p>
           <button className="btn" onClick={logoutSubmitHandler}>
             Logout
           </button>
