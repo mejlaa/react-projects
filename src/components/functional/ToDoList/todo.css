@@ -1,0 +1,15 @@
+.marked {
+  background-color: red;
+}
+
+.unmarked {
+  background-color: none;
+}
+.non {
+  display: none;
+}
+.yes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
