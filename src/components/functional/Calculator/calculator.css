@@ -1,0 +1,55 @@
+body {
+  margin: auto;
+}
+
+.box {
+  width: 300px;
+  /* height: 350px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.screen {
+  width: 100%;
+  height: 80px;
+  background-color: salmon;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* margin-bottom: 5px; */
+}
+.screen p {
+  margin-right: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+.btn-box {
+  width: 100%;
+  height: auto;
+  background-color: rgb(164, 191, 196);
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5px 0;
+}
+
+.btn {
+  width: 20%;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10%;
+  border: 2px solid salmon;
+  background-color: rgb(164, 191, 196);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+
+.btn-right {
+  background-color: salmon;
+}

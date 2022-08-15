@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import FormToDo from "./components/functional/ToDoList/formToDo";
+import Calculator from "./components/functional/Calculator/calculator";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <FormToDo />
+    <Calculator />
   </React.StrictMode>
 );
 
