@@ -50,6 +50,18 @@ body {
   font-size: 16px;
 }
 
+.btn-clear {
+  width: 217px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid salmon;
+  background-color: salmon;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 .btn-right {
   background-color: salmon;
 }
