@@ -25,6 +25,7 @@ const Calculator = () => {
 
   const delHandler = () => {
     setValue(value.slice(0, value.length - 1));
+    // if()
   };
 
   return (
