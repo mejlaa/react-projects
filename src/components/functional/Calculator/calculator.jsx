@@ -3,30 +3,56 @@ import "./calculator.css";
 
 const Calculator = () => {
   const [value, setValue] = useState("");
-  const [result, setResult] = useState("");
 
   const clearHandler = () => {
     setValue("");
   };
 
   const clickNumberHandler = (e) => {
+    // if (value[value.length - 1] === ".") {
+    //   const addZero = value.padEnd(0, value[value.length - 1]);
+    // } else {
+    //   setValue(value.concat(e.target.value));
+    // }
+
     setValue(value.concat(e.target.value));
   };
 
   const clickOperationHandler = (e) => {
     // const op = value + e.target.value;
-    setValue(value.concat(e.target.value));
+    if (
+      value[value.length - 1] === "+" ||
+      value[value.length - 1] === "-" ||
+      value[value.length - 1] === "*" ||
+      value[value.length - 1] === "/"
+    ) {
+      const newValue = value.substring(0, value.length - 1);
+      setValue(newValue.concat(e.target.value));
+    } else {
+      setValue(value.concat(e.target.value));
+    }
   };
 
   const clickEqualHandler = (e) => {
-    // setValue(result);
-    setValue(eval(value).toString());
+    if (
+      value[value.length - 1] === "+" ||
+      value[value.length - 1] === "-" ||
+      value[value.length - 1] === "*" ||
+      value[value.length - 1] === "/"
+    ) {
+      const newValue = value.substring(0, value.length - 1);
+      setValue(eval(newValue).toString());
+    } else {
+      setValue(eval(value).toString());
+    }
   };
 
   const delHandler = () => {
     setValue(value.slice(0, value.length - 1));
     // if()
   };
+
+  console.log(value[value.length - 1]);
 
   return (
     <div className="box">
