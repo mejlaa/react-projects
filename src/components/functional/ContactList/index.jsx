@@ -1,40 +1,44 @@
 import React, { useEffect, useState } from "react";
 import contactApi from "../../../api/api";
+import ContactCard from "./contactCard";
 
 const Contact = () => {
-  const [randomContact, setRandomContact] = useState({});
+  const [contacts, setContacts] = useState([]);
 
-  const fetchRandomContact = async () => {
+  const fetchContact = async () => {
     try {
-      const result = await contactApi.get(`?results=10`);
+      const result = await contactApi.get(`?results=100`);
       const data = result.data;
-      console.log(data);
-      setRandomContact(data[0]);
+      setContacts(data.results);
+      //   console.log(data);
     } catch (error) {
       console.log(error);
     }
   };
 
+  console.log(contacts);
+
   useEffect(() => {
-    fetchRandomContact();
+    fetchContact();
   }, []);
+
+  const randomContacts = () => {
+    //preko filtera-uradi
+  };
+
   return (
-    <div
-      style={{
-        width: 500,
-        height: 500,
-        margin: "auto",
-        backgroundColor: "green",
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
-      <button onClick={() => fetchRandomContact()}>Random contact</button>
-      <img
-        // src={randomContact.results.picture.thumbnail}
-        alt=""
-        style={{ maxHeight: 500, maxWidth: 500 }}
-      />
+    <div>
+      {contacts.map((contact, index) => {
+        return (
+          <ContactCard
+            key={index}
+            img={contact.picture.large}
+            name={contact.name.first}
+            email={contact.email}
+            age={contact.dob.age}
+          />
+        );
+      })}
     </div>
   );
 };
