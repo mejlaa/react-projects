@@ -1,0 +1,18 @@
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.searchList {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(234, 213, 253);
+}
+
+.recipes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
