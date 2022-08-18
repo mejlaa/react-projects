@@ -1,4 +1,31 @@
+body {
+  margin: 0;
+}
+
 .box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100px;
+  background-color: aquamarine;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+}
+
+.cardImg {
   display: flex;
   justify-content: center;
 }

@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Contact from "./components/functional/ContactList";
-import SearchRecipe from "./components/functional/RecipeApp/search";
+import RecipeApp from "./components/functional/RecipeApp";
+import RecipeCard from "./components/functional/RecipeApp/recipeCard";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <SearchRecipe />
+    <RecipeApp />
   </React.StrictMode>
 );
 
