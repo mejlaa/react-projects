@@ -8,7 +8,7 @@ const SearchRecipeInput = (props) => {
       <input
         type="text"
         value={value}
-        onChange={(e) => setValue(e, target.value)}
+        onChange={(e) => setValue(e.target.value)}
       />
     </div>
   );
