@@ -1,17 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import RecipeApp from "./components/functional/RecipeApp";
-import RecipeCard from "./components/functional/RecipeApp/recipeCard";
-import reportWebVitals from "./reportWebVitals";
+import TempApp from "./components/functional/Practise/TempControlApp";
+// import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <RecipeApp />
-  </React.StrictMode>
+  // <React.StrictMode>
+  <div>
+    <TempApp />
+  </div>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
