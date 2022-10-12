@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import SearchF from "./components/functional/Practise/SearchF";
+import RegForm from "./components/functional/Practise/RegForm";
 // import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
   <div>
-    <SearchF />
+    <RegForm />
   </div>
   // </React.StrictMode>
 );
