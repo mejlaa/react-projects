@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import TempApp from "./components/functional/Practise/TempControlApp";
+import SearchF from "./components/functional/Practise/SearchF";
 // import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
   <div>
-    <TempApp />
+    <SearchF />
   </div>
   // </React.StrictMode>
 );
