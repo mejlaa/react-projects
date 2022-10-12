@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import RegForm from "./components/functional/Practise/RegForm";
+import Quiz from "./components/functional/Practise/Quiz";
 // import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
   <div>
-    <RegForm />
+    <Quiz />
   </div>
   // </React.StrictMode>
 );
