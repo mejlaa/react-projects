@@ -2,19 +2,30 @@ import React, { useState } from "react";
 import "./temp.css";
 
 const TempApp = () => {
-  const [temp, setTemp] = useState(15);
+  const [temp, setTemp] = useState(10);
   const [tempColor, setTempColor] = useState("tempCold");
 
   const increaseHandler = () => {
-    setTemp(temp + 1);
+    if (temp === 30) return;
+    const newTemp = temp + 1;
+
+    if (newTemp >= 15) setTempColor("tempHot");
+
+    setTemp(newTemp);
   };
 
   const decreaseHandler = () => {
-    setTemp(temp - 1);
+    if (temp === 0) return;
+    const newTemp = temp - 1;
+    if (newTemp < 15) {
+      setTempColor("tempCold");
+    }
+    setTemp(newTemp);
   };
 
   const resetBtnHandler = () => {
-    setTemp(15);
+    setTemp(10);
+    setTempColor("tempCold");
   };
 
   return (

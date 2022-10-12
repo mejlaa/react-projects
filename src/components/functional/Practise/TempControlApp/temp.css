@@ -1,11 +1,11 @@
 body {
-  background-color: rgb(241, 230, 215);
+  background-color: rgb(255, 255, 255);
 }
 
 .frame {
   width: 380px;
   height: 500px;
-  background-color: rgb(161, 151, 15);
+  background-color: rgb(241, 230, 215);
   border-radius: 20px;
   margin: auto;
   padding-top: 20px;
@@ -35,11 +35,11 @@ body {
 }
 
 .tempCold {
-  background-color: rgb(27, 27, 185);
+  background-color: rgb(138, 204, 255);
 }
 
 .tempHot {
-  background-color: rgb(200, 4, 4);
+  background-color: rgb(195, 74, 74);
 }
 
 .btnBox {
@@ -53,8 +53,8 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 1px solid white;
-  background-color: rgba(25, 90, 94, 0.856);
+  border: none;
+  background-color: rgba(149, 172, 173, 0.856);
   margin: auto;
   font-size: 30px;
   color: rgb(0, 0, 0);
@@ -69,8 +69,8 @@ body {
   font-size: 15px;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
-  background-color: rgba(25, 90, 94, 0.856);
-  border: 1px solid white;
+  background-color: rgba(149, 172, 173, 0.856);
+  border: none;
   border-radius: 7px;
   margin-top: 20px;
 }
