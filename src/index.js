@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import PSimpleCounter from "./components/functional/Practise/PSimpleCounter";
+import PTempControl from "./components/functional/Practise/PTempControl";
 // import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
   <div>
-    <PSimpleCounter />
+    <PTempControl />
   </div>
   // </React.StrictMode>
 );

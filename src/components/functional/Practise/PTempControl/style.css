@@ -1,0 +1,52 @@
+body {
+  background-color: rgba(255, 255, 255, 0.587);
+}
+
+.box {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  border: solid 3px beige;
+  border-radius: 5%;
+}
+.tempDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 200px;
+  background-color: rgb(86, 150, 206);
+  border-radius: 50%;
+}
+
+.tempCold {
+  background-color: rgb(86, 150, 206);
+}
+
+.tempHot {
+  background-color: rgb(141, 16, 16);
+}
+
+.btnBox {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 40px;
+  height: 30px;
+  border: 3px solid beige;
+  background-color: white;
+  border-radius: 8px;
+}
+.btnReset {
+  width: 70px;
+  height: 30px;
+  border: 3px solid beige;
+  background-color: white;
+  border-radius: 8px;
+}
