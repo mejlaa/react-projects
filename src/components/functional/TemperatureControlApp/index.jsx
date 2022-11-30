@@ -30,7 +30,6 @@ const TemperatureControl = () => {
     <div className="frame">
       <div className="frameDiv">
         <p className={`temperature ${tempColor}`}>{temp}℃</p>
-        {/* <input type="range" name="temp" min="0" max="50" onClick={rangeHandler} /> */}
         <div className="btnBox">
           <button className="btn" onClick={increaseTemp}>
             +
