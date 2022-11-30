@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import PTempControl from "./components/functional/Practise/PTempControl";
+import PSearchFilter from "./components/functional/Practise/PSearchFilter";
 // import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
   <div>
-    <PTempControl />
+    <PSearchFilter />
   </div>
   // </React.StrictMode>
 );
